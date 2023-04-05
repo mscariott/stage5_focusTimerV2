@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg--color: white;
+  --primary--color: #323238;
+
+  --bg--sound--button--color: #E1E1E6;
+  --bg--sound--button--on--color: #02799D;
+  --sound-button--on--color: white;
+
+  font-size: 62.5%;
+}
+
+
+button
+{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg path{
+  fill: var(--primary--color);
+}
+
+
+
+body{
+  display: flex; 
+  height: 100vh;
+  align-items: center;
+  gap: 19.2rem;
+  justify-content: center;
+}
+
+.clock{
+  width: 32.1rem;
+}
+
+.sounds{
+  width: 30.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3.2rem;
+}
+
+
+.timer{
+  color: var(--primary--color);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  margin-bottom: 4.8rem;
+  display: flex;
+}
+
+.controls{
+  display: flex;
+  gap: 4rem;
+}
+
+.sounds button{
+  background-color: var(--bg--sound--button--color);
+  border-radius: 24px;
+  padding: 4.8rem;
+  height: 15.2rem;
+}
+
+.on button{
+  background-color: var(--bg--sound--button--on--color);
+}
+
+.on svg path{
+  fill: var(--sound-button--on--color);
+}
